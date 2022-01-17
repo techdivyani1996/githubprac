@@ -1,0 +1,17 @@
+P{
+    padding: 10px 20px;
+    background-color: rgb(51, 51, 141);
+    border:10px solid orange;
+    margin: 1px;
+    width: 100px;
+    height: 100px;
+}
+.box::before{
+    content: "hello";
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(141, 51, 71);
+    box-sizing: border-box;
+}
