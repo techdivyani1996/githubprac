@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container{
+            border: 2px solid rgb(0, 0, 0);
+            height: 500px;
+            width: 100%;
+            background-color: lightcoral;
+            /*flex properies display*/
+            display: flex;
+
+            /*flex properies for the felx container*/
+            flex-direction: row;
+            /*flex-direction: column;
+            flex-direction: row-reverse ;
+            flex-direction: column-reverse;*/
+             
+            /*this is a shorthand for flex direction and flex wrap*/
+           flex-flow:row 
+
+           /* defalut value of flex direction is no wrap*/
+            flex-wrap: wrap;
+
+            /*will justify the content in horizontal direction*/
+            /*justify-content: space-around;
+            justify-content: space-between;
+            justify-content: space-evenly;*/
+            justify-content: center;
+            
+           /* will justify the content in vertical direction*/
+            align-items: center;
+           /* align-items: stretch;*/
+        
+         }
+        .item{
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            margin: 10px;
+            background-color: powderblue;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>flexbox</h1>
+    <div class="container">
+    <div class="item" id="item1">box1</div>
+    <div class="item" id="item2">box2</div>
+    <div class="item" id="item3">box3</div>
+    <div class="item" id="item4">box4</div>
+    <div class="item" id="item5">box5</div>
+    <div class="item" id="item6">box6</div>
+    </div>
+</body>
+</html>
